@@ -13,6 +13,9 @@ body {
     color: #3a3a3a;
 }
 
+/*headings and logo*/
+
+
 h1, h2 {
     font-family: 'Oswald', sans-serif;
     font-weight: 300;
@@ -25,6 +28,8 @@ h1, h2 {
     float: left;
     font-size: 280%;
 }
+
+/* navigation links */
 
 #menu {
     font-size: 110%;
@@ -53,4 +58,33 @@ h1, h2 {
 .active {
     border-bottom: 1px solid #3a3a3a;
 }
+
+/* hero image */
+
+#hero-outer {
+    height: 600px;
+    width: 100%;
+    overflow: hidden;
+}
+
+#hero-image {
+    height: 600px;
+    width: 100%;
+    background: url('../images/hero-image.webp') no-repeat center center;
+
+    animation-name: hero-zoom;
+    animation-duration: 10s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes hero-zoom {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.1);
+    }
+}
+
+
 
